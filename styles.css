@@ -24,15 +24,23 @@ h1 {
 }
 .newsletter__list {
   list-style: none;
+  text-indent: 0;
+  padding-left: 0;
+}
+.newsletter__listitem {
+  /* padding-left: 40px; */
 }
 .check-icon {
-  background: url('assets/images/icon-list.svg') no-repeat left top;
+  background: url("assets/images/icon-list.svg") no-repeat left top;
   padding-left: 40px;
+}
+.subscribe-form__label {
+  color: var(--grey);
 }
 @media screen and (max-width: 720px) {
   .newsletter-content {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 8%;
   }
   .newsletter__text {
     font-size: 1.2rem;
@@ -40,5 +48,13 @@ h1 {
   .newsletter__listitem {
     margin-bottom: 15px;
     width: 90%;
+  }
+  .subscribe-form {
+    width: 100%;
+  }
+  .subscribe-form__label {
+    font-size: 1rem;
+    width: 100%;
+    display: inline-block;
   }
 }
